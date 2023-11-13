@@ -281,7 +281,9 @@ header__form-input::placeholder {
 .modal-btn {
   margin-top: 50px;
 }
-
+input:focus {
+  outline: inherit;
+}
 .catalog__popup2-input {
   border: none;
   border-bottom: 1px solid #000;

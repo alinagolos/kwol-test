@@ -50,3 +50,4 @@ Fancybox.bind('.catalog__btn1', {});
 Fancybox.bind('.catalog__btn2', {});
 Fancybox.bind('.catalog__btn3', {});
 Fancybox.bind('.catalog__btn4', {});
+Fancybox.bind('.catalog__btn5', {});
