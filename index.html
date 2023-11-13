@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kwol</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&family=Inter&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="fonts/stylesheet.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <script src="https://unpkg.com/imask"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Мой тест</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Переключатель навигации"
+        >
+          <span class="icon-bar"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav navbar-nav">
+            <li class="nav-item dropdown">
+              <form class="navbar-form" role="search">
+                <input
+                  class="form-control header__form-input"
+                  type="search"
+                  placeholder="Поиск, автомобиля, введите марку или модель."
+                />
+                <button class="btn header__form-btn" type="submit">
+                  <img src="images/icon _search.svg" alt="seach" />
+                </button>
+              </form>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle header__nav-link"
+                href="#"
+                role="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Москва
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Самара</a></li>
+                <li><a class="dropdown-item" href="#">Санкт-Петербург</a></li>
+                <li><a class="dropdown-item" href="#">Казань</a></li>
+                <li><a class="dropdown-item" href="#">Саратов</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <button class="btn header__nav-btn" type="button">Войти</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="catalog">
+      <div class="container">
+        <div
+          class="catalog__wrapper d-flex justify-content-between flex-lg-nowrap flex-wrap gap-3"
+        >
+          <div class="catalog__swiper">
+            <div class="catalog__swiper2">
+              <div class="catalog__swiper-wrapper swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="images/img-big.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/img-big.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/img-big.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/img-big.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/img-big.png" />
+                </div>
+              </div>
+              <div class="catalog__button-next"></div>
+              <div class="catalog__button-prev"></div>
+            </div>
+            <div thumbsSlider="" class="catalog__swiper1">
+              <div class="catalog__swiper-wrapper swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="images/img-mini.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/img-mini.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/img-mini.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/img-mini.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/img-mini.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog__content">
+            <div class="catalog__content-title">Моя поездка на море</div>
+            <div class="catalog__content-text">Алтай</div>
+            <div class="catalog__content-title-list">Плюсы:</div>
+            <ul class="catalog__content-list">
+              <li class="catalog__content-item"><a href="#">kwol</a></li>
+              <li class="catalog__content-item">
+                <a href="#">digital-agency</a>
+              </li>
+              <li class="catalog__content-item">
+                <a href="#">Выплаты: по окончанию</a>
+              </li>
+              <li class="catalog__content-item catalog__content-item--long">
+                <a href="#">Сюда помещается длинный текст</a>
+              </li>
+            </ul>
+            <div class="catalog__content-title-list">Минусы:</div>
+            <ul class="catalog__content-list">
+              <li class="catalog__content-item"><a href="#">Коньяк</a></li>
+              <li class="catalog__content-item"><a href="#">Спортик</a></li>
+            </ul>
+            <div class="catalog__btn-list">
+              <a
+                class="catalog__btn catalog__btn1"
+                href="#catalog__btn1-popup"
+                data-fancybox
+              >
+                Ты хочешь мороженое?
+              </a>
+              <a
+                class="catalog__btn catalog__btn2"
+                href="#catalog__btn2-popup"
+                data-fancybox
+              >
+                Готово
+              </a>
+              <a
+                class="catalog__btn catalog__btn3"
+                href="#catalog__btn3-popup"
+                data-fancybox
+              >
+                JS-kod
+              </a>
+              <a
+                class="catalog__btn catalog__btn4"
+                href="#catalog__btn4-popup"
+                data-fancybox
+              >
+                Книга
+              </a>
+            </div>
+
+            <div
+              class="catalog__popup1"
+              id="catalog__btn1-popup"
+              style="display: none"
+            >
+              <form class="catalog__popup1-form d-flex flex-column mb-3">
+                <p>Мороженое?</p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="Choice1"
+                    value="1"
+                  />
+                  <label class="form-check-label" for="Choice1"
+                    >ДА, это действительно мороженое</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="Choice2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="Choice2"
+                    >Нет, это НЕРВЫ шалят</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="Choice3"
+                    value="3"
+                  />
+                  <label class="form-check-label" for="Choice3">.</label>
+                </div>
+
+                <button class="modal-btn" type="submit">ОТПРАВИТЬ</button>
+              </form>
+            </div>
+            <div
+              class="catalog__popup2"
+              id="catalog__btn2-popup"
+              style="display: none"
+            >
+              <div class="catalog__popup2-title">Личный кабинет</div>
+              <form class="catalog__popup2-form">
+                <div class="catalog__popup2__wrapper">
+                  <input
+                    class="catalog__popup2-input"
+                    type="tel"
+                    required
+                    placeholder="Номер"
+                  />
+                </div>
+                <div class="catalog__popup2__wrapper">
+                  <input
+                    class="catalog__popup2-input"
+                    type="text"
+                    required
+                    placeholder="Сообщение о том, что все сделано"
+                  />
+                </div>
+                <button class="modal-btn" type="submit">Отправить</button>
+              </form>
+            </div>
+            <div
+              class="catalog__popup3"
+              id="catalog__btn3-popup"
+              style="display: none"
+            >
+              <div class="catalog__popup3-title">JS</div>
+              <div class="catalog__popup3-wrapper">
+                <p class="catalog__popup3-text">Это действительно js !</p>
+
+                <p>А ты как думал?</p>
+              </div>
+              <button class="modal-btn" type="submit">Отправить</button>
+            </div>
+            <div
+              class="catalog__popup4"
+              id="catalog__btn4-popup"
+              style="display: none"
+            >
+              <div class="catalog__popup4-title">
+                Гарри Поттер и Философский Камень
+              </div>
+              <div class="catalog__popup4-wrapper">
+                <p class="catalog__popup4-text">
+                  Глава 1. Мальчик, который выжил Мистер и миссис Дурсль
+                  проживали в доме номер четыре по Тисовой улице и всегда с
+                  гордостью заявляли, что они, слава богу, абсолютно нормальные
+                  люди. Уж от кого-кого, а от них никак нельзя было ожидать,
+                  чтобы они попали в какую-нибудь странную или загадочную
+                  ситуацию. Мистер и миссис Дурсль весьма неодобрительно
+                  относились к любым странностям, загадкам и прочей ерунде.
+                  Мистер Дурсль возглавлял фирму под названием «Граннингс»,
+                  которая специализировалась на производстве дрелей. Это был
+                  полный мужчина с очень пышными усами и очень короткой шеей.
+                  Что же касается миссис Дурсль, она была тощей блондинкой с
+                  шеей почти вдвое длиннее, чем положено при ее росте. Однако
+                  этот недостаток пришелся ей весьма кстати, поскольку большую
+                  часть времени миссис Дурсль следила за соседями и подслушивала
+                  их разговоры. А с такой шеей, как у нее, было очень удобно
+                  заглядывать за чужие заборы. У мистера и миссис Дурсль был
+                  маленький сын по имени Дадли, и, по их мнению, он был самым
+                  чудесным ребенком на свете........
+                </p>
+              </div>
+              <button class="modal-btn--yellow me-4" type="Лайк">Лайк</button>
+              <input
+                class="catalog__popup4-input"
+                type="tel"
+                placeholder="+7"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slider">
+      <div class="container">
+        <div class="slider-tit">Вставь свои любимые машины</div>
+        <div class="mySwiper">
+          <div class="swiper-wrapper myswiper-wrapper">
+            <div class="swiper-slide">
+              <img class="slide__img" src="images/img-med.png" alt="img" />
+              <div class="slide__title">Skoda Octavia 2018</div>
+              <div class="slide_price">2300 руб./день</div>
+              <button class="slide_btn">Арендовать</button>
+            </div>
+            <div class="swiper-slide">
+              <img class="slide__img" src="images/img-med.png" alt="img" />
+              <div class="slide__title">Skoda Octavia 2018</div>
+              <div class="slide_price">2300 руб./день</div>
+              <button class="slide_btn">Арендовать</button>
+            </div>
+            <div class="swiper-slide">
+              <img class="slide__img" src="images/img-med.png" alt="img" />
+              <div class="slide__title">Skoda Octavia 2018</div>
+              <div class="slide_price">2300 руб./день</div>
+              <button class="slide_btn">Арендовать</button>
+            </div>
+            <div class="swiper-slide">
+              <img class="slide__img" src="images/img-med.png" alt="img" />
+              <div class="slide__title">Skoda Octavia 2018</div>
+              <div class="slide_price">2300 руб./день</div>
+              <button class="slide_btn">Арендовать</button>
+            </div>
+            <div class="swiper-slide">
+              <img class="slide__img" src="images/img-med.png" alt="img" />
+              <div class="slide__title">Skoda Octavia 2018</div>
+              <div class="slide_price">2300 руб./день</div>
+              <button class="slide_btn">Арендовать</button>
+            </div>
+            <div class="swiper-slide">
+              <img class="slide__img" src="images/img-med.png" alt="img" />
+              <div class="slide__title">Skoda Octavia 2018</div>
+              <div class="slide_price">2300 руб./день</div>
+              <button class="slide_btn">Арендовать</button>
+            </div>
+            <div class="swiper-slide">
+              <img class="slide__img" src="images/img-med.png" alt="img" />
+              <div class="slide__title">Skoda Octavia 2018</div>
+              <div class="slide_price">2300 руб./день</div>
+              <button class="slide_btn">Арендовать</button>
+            </div>
+            <div class="swiper-slide">
+              <img class="slide__img" src="images/img-med.png" alt="img" />
+              <div class="slide__title">Skoda Octavia 2018</div>
+              <div class="slide_price">2300 руб./день</div>
+              <button class="slide_btn">Арендовать</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>
